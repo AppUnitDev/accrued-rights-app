@@ -5,12 +5,13 @@ import Dashboard from "./pages/Dashboard";
 import { AccruedRights, Retirees, Deceased } from "./pages/AccruedRights";
 import PensionIncrease from "./pages/PensionIncrease";
 import Report1 from "./pages/Report1";
-// import logo from "./images/favicon.ico"
+import logo from "./images/favicon.ico";
 
 function App() {
   return (
     <Router>
       <Sidebar />
+      <img src={logo} alt="myLogo" className="img-bg"></img>
       <Switch>
         <Route path="/dashboard" exact component={Dashboard} />
         <Route path="/accrued-rights" exact component={AccruedRights} />
