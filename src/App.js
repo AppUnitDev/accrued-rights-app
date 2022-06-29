@@ -13,7 +13,7 @@ function App() {
       <Sidebar />
       <img src={logo} alt="myLogo" className="img-bg"></img>
       <Switch>
-        <Route path="/dashboard" exact component={Dashboard} />
+        <Route exact path="/" component={Dashboard} />
         <Route path="/accrued-rights" exact component={AccruedRights} />
         <Route path="/accrued-rights/retirees" exact component={Retirees} />
         <Route path="/accrued-rights/deceased" exact component={Deceased} />

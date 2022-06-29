@@ -12,7 +12,7 @@ import * as GiIcons from "react-icons/gi";
 export const SidebarData = [
   {
     title: "Dashboard",
-    path: "/dashboard",
+    path: "/",
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
