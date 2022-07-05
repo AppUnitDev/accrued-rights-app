@@ -6,12 +6,16 @@ import { AccruedRights, Retirees, Deceased } from "./pages/AccruedRights";
 import PensionIncrease from "./pages/PensionIncrease";
 import Report1 from "./pages/Report1";
 import logo from "./images/favicon.ico";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Router>
       <Sidebar />
-      <img src={logo} alt="myLogo" className="img-bg"></img>
+      <Helmet>
+      <style>{"body { background-color: lightgrey; }"}</style>
+      </Helmet>
+      <img src={logo} width={250} height={250} alt="myLogo" className="img-bg"></img>
       <Switch>
         <Route exact path="/" component={Dashboard} />
         <Route path="/accrued-rights" exact component={AccruedRights} />
