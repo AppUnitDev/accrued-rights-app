@@ -58,10 +58,19 @@ export const SidebarData = [
     ],
   },
   {
-    title: 'Death Benefits',
+    title: 'Death Benefit',
     path: '/',
     icon: <FaIcons.FaRegMoneyBillAlt />,
+
+    subNav: [
+      {
+        title: 'PFA Submissions',
+        path: '/death-benefit/pfa-submissions',
+        icon: <FaIcons.FaUserSecret />,
+      },
+    ],
   },
+
   {
     title: 'Administration',
     path: '/',

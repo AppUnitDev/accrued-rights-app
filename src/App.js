@@ -8,6 +8,7 @@ import Report1 from './pages/Report1';
 import logo from './images/favicon.ico';
 import { Helmet } from 'react-helmet';
 import MaintainPencomUsers from './pages/MaintainPencomUsers';
+import PFASubmission from './pages/PFASubmission';
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
         />
         <Route path="/accrued-rights/retirees" exact component={Retirees} />
         <Route path="/accrued-rights/deceased" exact component={Deceased} />
+        <Route
+          path="/death-benefit/pfa-submissions"
+          exact
+          component={PFASubmission}
+        />
         <Route
           path="/accrued-rights/pension-increase"
           exact
