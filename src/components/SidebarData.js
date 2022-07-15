@@ -32,14 +32,14 @@ export const SidebarData = [
   },
   {
     title: 'Accrued Rights',
-    path: '/maintainPencomusers',
+    path: '/',
     icon: <BiIcons.BiCoinStack />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
-        title: 'Retirees',
+        title: 'Retiree',
         path: '/accrued-rights/retirees',
         icon: <GiIcons.GiTwoCoins />,
         // cName: 'sub-nav'
@@ -58,7 +58,7 @@ export const SidebarData = [
     ],
   },
   {
-    title: 'Death Benefits',
+    title: 'Death Benefit',
     path: '/',
     icon: <FaIcons.FaRegMoneyBillAlt />,
   },
@@ -72,7 +72,7 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'Maintain User',
+        title: 'Maintain Users',
         path: '/administration/maintain-user',
         icon: <FaIcons.FaUserSecret />,
       },
@@ -103,7 +103,7 @@ export const SidebarData = [
   },
   {
     title: 'Reports',
-    path: '/reports',
+    path: '/',
     icon: <AiIcons.AiFillSwitcher />,
 
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -132,6 +132,14 @@ export const SidebarData = [
       },
     ],
   },
+
+  {
+    title: 'MaintainPencomUsers',
+    path: '/maintainpencomusers',
+    icon: <AiIcons.AiFillHome />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+  }
   // {
   //   title: 'Reports',
   //   path: '/reports',

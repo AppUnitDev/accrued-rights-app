@@ -24,12 +24,7 @@ function App() {
         className="img-bg"
       ></img>
       <Switch>
-        <Route exact path="/" component={MaintainPencomUsers} />
-        <Route
-          path="/maintainPencomusers"
-          exact
-          component={MaintainPencomUsers}
-        />
+        <Route exact path="/" component={Dashboard} />
         <Route path="/accrued-rights/retirees" exact component={Retirees} />
         <Route path="/accrued-rights/deceased" exact component={Deceased} />
         <Route
@@ -38,6 +33,7 @@ function App() {
           component={PensionIncrease}
         />
         <Route path="/reports/consolidated-paid" exact component={Report1} />
+        <Route path="/maintainpencomusers" exact component={MaintainPencomUsers} />
       </Switch>
     </Router>
   );

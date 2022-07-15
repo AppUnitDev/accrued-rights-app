@@ -6,13 +6,14 @@ import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
+import "../App.css";
 
 const Nav = styled.div`
   background: #79afd2;
   height: 80px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; 
 `;
 
 const NavIcon = styled(Link)`
@@ -39,6 +40,7 @@ const SidebarNav = styled.nav`
 
 const SidebarWrap = styled.div`
   width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
 `;
 
 const Sidebar = () => {
