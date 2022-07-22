@@ -18,7 +18,7 @@ export class UserForm extends Component {
     firstName: 'Collins',
     lastName: 'Paul',
     email: '',
-    otherNames: '',
+    otherNames: 'Charles',
     occupation: '',
     city: '',
     bio: '',
@@ -59,6 +59,7 @@ export class UserForm extends Component {
       bio,
       gender,
       dob,
+      otherNames,
     } = this.state;
     const values = {
       firstName,
@@ -70,6 +71,7 @@ export class UserForm extends Component {
       employerName,
       bio,
       dob,
+      otherNames,
     };
     switch (step) {
       case 1:

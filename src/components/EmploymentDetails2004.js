@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-//import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import AppBar from 'material-ui/AppBar';
-import TextField from 'material-ui/TextField';
+//import TextField from 'material-ui/TextField';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+//import RaisedButton from 'material-ui/RaisedButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import { StylesContext } from '@material-ui/styles';
 import {
@@ -13,8 +13,10 @@ import {
   Radio,
   RadioGroup,
   makeStyles,
+  TextField,
 } from '@material-ui/core';
 import { useForm, Form } from './useForm';
+// import { RaisedButton } from 'material-ui';
 
 export class EmploymentDetails2004 extends Component {
   continue = (e) => {
@@ -33,42 +35,55 @@ export class EmploymentDetails2004 extends Component {
       <MuiThemeProvider>
         <>
           <Form>
-            <AppBar title=" Basic Employment Detials 2004" />
+            <AppBar
+              title=" Basic Employment Detials 2004"
+              style={{ width: '900px' }}
+            />
+
             <Grid container>
               <Grid item xs={6}>
                 <br />
                 <TextField
-                  readOnly={true}
+                  label="                  Organization Sector (2004)                      "
+                  //readOnly={true}
                   hintText="Organization Sector (2004)"
                   floatingLabelText="Organization Sector (2004)"
                   onChange={handleChange('orgSector')}
                   defaultValue={values.orgSector}
+                  name="orgSectors"
+                  //value={valuess.orgSector}
+                  //onChanged={handleInputChange}
                   value="PU"
+                  fullWidth
                 />
                 <br />
                 <TextField
-                  readOnly={true}
+                  label="Employer (2004)"
+                  //readOnly={true}
                   hintText="Employer (2004)"
                   floatingLabelText="Employer (2004)"
                   onChange={handleChange('employer2004')}
                   defaultValue={values.occupation}
-                  value="Ministry of Power"
+                  // value="Ministry of Power"
                 />
                 <br />
                 <TextField
-                  readOnly={true}
+                  label="IPPIS Date/Self-Funded MDA"
+                  //readOnly={true}
                   hintText="IPPIS Date/Self-Funded MDA"
                   floatingLabelText="IPPIS Date/Self-Funded MDA"
                   onChange={handleChange('ippisdateSelf')}
                   defaultValue={values.dts}
                   value="15-Aug-2012"
+                  fullWidth
                 />
               </Grid>
 
               <Grid item xs={6}>
                 <br />
                 <TextField
-                  readOnly={true}
+                  //readOnly={true}
+                  label="Staff ID (2004) "
                   hintText="Staff_ID (2004)"
                   floatingLabelText="Staff_ID (2004)"
                   onChange={handleChange('staffId')}
