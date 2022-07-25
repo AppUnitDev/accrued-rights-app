@@ -29,41 +29,38 @@ const theme = createTheme({
 function App() {
   return (
     <Router>
-      <ThemeProvider theme={theme}>
-        <Sidebar />
-        <Helmet>
-          <style>{'body { background-color: lightgrey; }'}</style>
-        </Helmet>
-        <img
-          src={logo}
-          width={250}
-          height={250}
-          alt="myLogo"
-          className="img-bg"
-        ></img>
-        <Switch>
-          <Route exact path="/" component={MaintainPencomUsers} />
-          <Route
-            path="/maintainPencomusers"
-            exact
-            component={MaintainPencomUsers}
-          />
-          <Route path="/accrued-rights/retirees" exact component={Retirees} />
-          <Route path="/accrued-rights/deceased" exact component={Deceased} />
-          <Route
-            path="/death-benefit/pfa-submissions"
-            exact
-            component={PFASubmission}
-          />
-          <Route
-            path="/accrued-rights/pension-increase"
-            exact
-            component={PensionIncrease}
-          />
-          <Route path="/reports/consolidated-paid" exact component={Report1} />
-        </Switch>
-        <CssBaseline />
-      </ThemeProvider>
+      <Sidebar />
+      <Helmet>
+        <style>{'body { background-color: lightgrey; }'}</style>
+      </Helmet>
+      <img
+        src={logo}
+        width={250}
+        height={250}
+        alt="myLogo"
+        className="img-bg"
+      ></img>
+      <Switch>
+        <Route exact path="/" component={Dashboard} />
+        <Route path="/accrued-rights/retirees" exact component={Retirees} />
+        <Route path="/accrued-rights/deceased" exact component={Deceased} />
+        <Route
+          path="/death-benefit/pfa-submissions"
+          exact
+          component={PFASubmission}
+        />
+        <Route
+          path="/accrued-rights/pension-increase"
+          exact
+          component={PensionIncrease}
+        />
+        <Route path="/reports/consolidated-paid" exact component={Report1} />
+        <Route
+          path="/maintainpencomusers"
+          exact
+          component={MaintainPencomUsers}
+        />
+      </Switch>
     </Router>
   );
 }
