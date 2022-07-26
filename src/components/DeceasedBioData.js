@@ -1,13 +1,13 @@
-import React, { Component, useState } from 'react';
-import AppBar from 'material-ui/AppBar';
+import React, { Component, useState } from "react";
+import AppBar from "material-ui/AppBar";
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
-import RaisedButton from 'material-ui/RaisedButton';
-import { StylesContext } from '@material-ui/styles';
-import Controls from './controls/Controls';
-import { useForm, Form } from './useForm';
-import Popup from '../components/Popup';
+import RaisedButton from "material-ui/RaisedButton";
+import { StylesContext } from "@material-ui/styles";
+import Controls from "./controls/Controls";
+import { useForm, Form } from "./useForm";
+import Popup from "../components/Popup";
 
 import {
   FormControl,
@@ -18,7 +18,7 @@ import {
   RadioGroup,
   makeStyles,
   TextField,
-} from '@material-ui/core';
+} from "@material-ui/core";
 
 export class DeceasedBioData extends Component {
   // const [openPopup, setOpenPopup] = props;
@@ -77,12 +77,12 @@ export class DeceasedBioData extends Component {
                     onClick: () => {
                       handlePopup();
                     },
-                    style: { cursor: 'pointer' },
+                    style: { cursor: "pointer" },
                   }}
                   label="First Name"
                   hintText="first Name"
                   floatingLabelText="First Name"
-                  onChange={handleChange('firstName')}
+                  onChange={handleChange("firstName")}
                   defaultValue={values.firstName}
                   // readOnly={true}
                 />
@@ -90,7 +90,7 @@ export class DeceasedBioData extends Component {
                   label="Last Name"
                   hintText="Last Name"
                   floatingLabelText="Last Name"
-                  onChange={handleChange('lastName')}
+                  onChange={handleChange("lastName")}
                   defaultValue={values.lastName}
                   // readOnly={true}
                 />
@@ -98,7 +98,7 @@ export class DeceasedBioData extends Component {
                   label="Other Names"
                   hintText="Other Names"
                   floatingLabelText="Other Names"
-                  onChange={handleChange('otherNames')}
+                  onChange={handleChange("otherNames")}
                   //value="Kenneth"
                   defaultValue={values.otherNames}
                   //readOnly={true}
@@ -123,7 +123,7 @@ export class DeceasedBioData extends Component {
                   label="Gender"
                   hintText="Gender"
                   floatingLabelText="Gender"
-                  onChange={handleChange('gender')}
+                  onChange={handleChange("gender")}
                   defaultValue={values.gender}
                   //readOnly={true}
                 />
@@ -131,7 +131,7 @@ export class DeceasedBioData extends Component {
                 <TextField
                   hintText="Date of Birth"
                   floatingLabelText="Date of Birth"
-                  onChange={handleChange('dob')}
+                  onChange={handleChange("dob")}
                   defaultValue={values.dob}
                   // readOnly={true}
                   label="Date of Birth"
@@ -141,7 +141,7 @@ export class DeceasedBioData extends Component {
                   label="Employer Name"
                   hintText="Employer Name"
                   floatingLabelText="employerName"
-                  onChange={handleChange('employerName')}
+                  onChange={handleChange("employerName")}
                   defaultValue={values.employerName}
                   //readOnly={true}
                 />
@@ -169,7 +169,8 @@ export class DeceasedBioData extends Component {
               Close
             </Controls.ActionButton>
             <Controls.Input
-              eadOnly={true}
+              focused
+              readOnly={true}
               value="Kollins"
               label="Name From MDA"
             ></Controls.Input>
