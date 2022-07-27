@@ -61,11 +61,18 @@ export const SidebarData = [
     title: 'Death Benefit',
     path: '/',
     icon: <FaIcons.FaRegMoneyBillAlt />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
         title: 'PFA Submissions',
         path: '/death-benefit/pfa-submissions',
+        icon: <FaIcons.FaUserSecret />,
+      },
+      {
+        title: 'PFA Validation',
+        path: '/death-benefit/pfa-validation',
         icon: <FaIcons.FaUserSecret />,
       },
     ],

@@ -10,6 +10,9 @@ import { Helmet } from 'react-helmet';
 import MaintainPencomUsers from './pages/MaintainPencomUsers';
 import PFASubmission from './pages/PFASubmission';
 import { createTheme, CssBaseline, ThemeProvider } from '@material-ui/core';
+import Report3 from './pages/Report3';
+import Report4 from './pages/Report4';
+import UserForm from './PfaModule/UserForm';
 
 const theme = createTheme({
   palette: {
@@ -31,7 +34,7 @@ function App() {
     <Router>
       <Sidebar />
       <Helmet>
-        <style>{'body { background-color: lightgrey; }'}</style>
+        <style>{"body { background-color: lightgrey; }"}</style>
       </Helmet>
       <img
         src={logo}
@@ -47,6 +50,11 @@ function App() {
         <Route
           path="/death-benefit/pfa-submissions"
           exact
+          component={UserForm}
+        />
+        <Route
+          path="/death-benefit/pfa-validation"
+          exact
           component={PFASubmission}
         />
         <Route
@@ -55,6 +63,21 @@ function App() {
           component={PensionIncrease}
         />
         <Route path="/reports/consolidated-paid" exact component={Report1} />
+        {/* <Route
+          path="/reports/consolidated-accrued-rights"
+          exact
+          component={Report2}
+        /> */}
+        <Route
+          path="/reports/accrued-rights-paid-per-pfa"
+          exact
+          component={Report3}
+        />
+        <Route
+          path="/reports/pension-increase-paid-per-pfa"
+          exact
+          component={Report4}
+        />
         <Route
           path="/maintainpencomusers"
           exact
