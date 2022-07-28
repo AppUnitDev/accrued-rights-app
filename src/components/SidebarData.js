@@ -115,6 +115,12 @@ export const SidebarData = [
         path: '/administration/reset-password',
         icon: <FaIcons.FaUserSecret />,
       },
+      {
+        title: 'MaintainPencomUsers',
+        path: '/maintainpencomusers',
+        icon: <FaIcons.FaUserSecret />,
+        
+      }
     ],
   },
   {
@@ -149,13 +155,6 @@ export const SidebarData = [
     ],
   },
 
-  {
-    title: 'MaintainPencomUsers',
-    path: '/maintainpencomusers',
-    icon: <AiIcons.AiFillHome />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-  }
   // {
   //   title: 'Reports',
   //   path: '/reports',

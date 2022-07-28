@@ -25,20 +25,20 @@ export default function Report4() {
         <PictureAsPdfIcon />
       </IconButton>
       <TableContainer component={Paper}>
-        <Table 
-          sx={{ minWidth: 400, backgroundColor: "gray" }}
+        <Table
+          sx={{ minWidth: 400, backgroundColor: "lightgrey" }}
           aria-label="caption table"
         >
           <caption>Pension Increase Per PFA Table</caption>
           <TableHead>
             <TableRow
               sx={{
-                backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                backgroundColor: "lightgrey",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -49,12 +49,12 @@ export default function Report4() {
 
             <TableRow
               sx={{
-                backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                backgroundColor: "lightgrey",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -70,12 +70,12 @@ export default function Report4() {
 
             <TableRow
               sx={{
-                backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                backgroundColor: "lightgrey",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -91,12 +91,12 @@ export default function Report4() {
 
             <TableRow
               sx={{
-                backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                backgroundColor: "lightgrey",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -112,12 +112,12 @@ export default function Report4() {
 
             <TableRow
               sx={{
-                backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                backgroundColor: "lightgrey",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -133,12 +133,12 @@ export default function Report4() {
 
             <TableRow
               sx={{
-                backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                backgroundColor: "lightgrey",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -147,8 +147,12 @@ export default function Report4() {
               <TableCell>RSA PIN</TableCell>
               <TableCell>PFA NAME</TableCell>
               <TableCell>BATCH NAME</TableCell>
-              <TableCell>ACCRUED RIGHTS OF 15% PENSION INCREASE AS 30/06/2007</TableCell>
-              <TableCell>ACCRUED RIGHTS OF 33% PENSION INCREASE AS 30/06/2010</TableCell>
+              <TableCell>
+                ACCRUED RIGHTS OF 15% PENSION INCREASE AS 30/06/2007
+              </TableCell>
+              <TableCell>
+                ACCRUED RIGHTS OF 33% PENSION INCREASE AS 30/06/2010
+              </TableCell>
               <TableCell>TOTAL ACCRUED RIGHTS WITH PENSION INCREASES</TableCell>
             </TableRow>
           </TableHead>
@@ -228,4 +232,4 @@ export default function Report4() {
       </TableContainer>
     </div>
   );
-};
+}

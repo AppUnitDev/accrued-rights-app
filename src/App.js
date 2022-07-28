@@ -2,7 +2,7 @@ import './App.css';
 import Sidebar from './components/Sidebar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
-import { AccruedRights, Retirees, Deceased } from './pages/AccruedRights';
+import { Retirees, Deceased } from './pages/AccruedRights';
 import PensionIncrease from './pages/PensionIncrease';
 import Report1 from './pages/Report1';
 import logo from './images/favicon.ico';

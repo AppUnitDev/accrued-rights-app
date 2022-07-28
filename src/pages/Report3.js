@@ -26,7 +26,7 @@ export default function Report3() {
       </IconButton>
       <TableContainer component={Paper}>
         <Table 
-          sx={{ minWidth: 400, backgroundColor: "gray" }}
+          sx={{ minWidth: 400, backgroundColor: "lightgrey" }}
           aria-label="caption table"
         >
           <caption>Accrued Rights Payment Per PFA Table</caption>
@@ -34,11 +34,11 @@ export default function Report3() {
             <TableRow
               sx={{
                 backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -50,11 +50,11 @@ export default function Report3() {
             <TableRow
               sx={{
                 backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -69,11 +69,11 @@ export default function Report3() {
             <TableRow
               sx={{
                 backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -88,11 +88,11 @@ export default function Report3() {
             <TableRow
               sx={{
                 backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -107,11 +107,11 @@ export default function Report3() {
             <TableRow
               sx={{
                 backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
@@ -126,11 +126,11 @@ export default function Report3() {
             <TableRow
               sx={{
                 backgroundColor: "grey",
-                borderTop: "2px solid black",
-                borderBottom: "2px solid black",
+                // borderTop: "2px solid black",
+                // borderBottom: "2px solid black",
                 "& th": {
                   fontSize: "1rem",
-                  color: "white",
+                  color: "black",
                 },
               }}
             >
