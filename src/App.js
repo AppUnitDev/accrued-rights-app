@@ -10,6 +10,7 @@ import { Helmet } from 'react-helmet';
 import MaintainPencomUsers from './pages/MaintainPencomUsers';
 import PFASubmission from './pages/PFASubmission';
 import { createTheme, CssBaseline, ThemeProvider } from '@material-ui/core';
+import Report2 from './pages/Report2';
 import Report3 from './pages/Report3';
 import Report4 from './pages/Report4';
 import UserForm from './PfaModule/UserForm';
@@ -63,11 +64,11 @@ function App() {
           component={PensionIncrease}
         />
         <Route path="/reports/consolidated-paid" exact component={Report1} />
-        {/* <Route
+        <Route
           path="/reports/consolidated-accrued-rights"
           exact
           component={Report2}
-        /> */}
+        />
         <Route
           path="/reports/accrued-rights-paid-per-pfa"
           exact
